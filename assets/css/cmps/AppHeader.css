@@ -1,0 +1,53 @@
+
+@media (max-width:760px) {
+    nav{
+        gap:5px;
+        right: 0;
+    }
+}
+
+@media (min-width:760px) {
+    nav {
+        gap: 20px;
+        right: 40px;
+    }
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #F5F5F5; 
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+.app-header h3 {
+    color: #4285F4; 
+    margin: 0;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ECECEC; 
+    color: #4285F4; 
+}
+
+nav a.active { 
+    background-color: #4285F4; 
+    color: #FFFFFF;
+}

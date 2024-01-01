@@ -1,0 +1,120 @@
+ /* home */
+
+ * {
+     box-sizing: border-box;
+ }
+
+ @keyframes waveAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25%);
+    }
+}
+
+.home-layout {
+    font-family: 'Arial', sans-serif;
+    height: 93vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #FFFFFF; 
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    padding: 8% 15%;
+    border-radius: 25px;
+    z-index: 1;
+    position: relative;
+    background: rgba(0, 0, 0, 0.05); 
+    max-width: 80%;
+    margin: 60px auto;
+}
+
+.title {
+    font-size: 5vw;  
+    color: #4285F4; 
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.5vw; 
+    /* margin-bottom: 100px; */
+    align-self: center;
+    color: #666; 
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.app-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 20px 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+}
+
+.app-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mail-app {
+    background: #DB4437; 
+}
+
+.keep-app {
+    background: #f9c715; 
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(-45deg, #ECECEC, #ECECEC 25%, #FFFFFF 25%, #FFFFFF 50%); /* Simplified wave colors */
+    z-index: -1;
+    animation: waveAnimation 10s infinite;
+}
+
+.wave1 {
+    animation-delay: 0s;
+}
+
+.wave2 {
+    animation-delay: 5s;
+    opacity: 0.5;
+}
+
+.wave3 {
+    animation-delay: 7.5s;
+    opacity: 0.2;
+}
+

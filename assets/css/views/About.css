@@ -1,0 +1,98 @@
+.about-layout-cards {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    background-color: #ECECEC;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+}
+
+.member-card {
+    width: 250px;
+    height: 330px; 
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.member-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+    margin-top: auto; 
+}
+
+
+.about-waves {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.about-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(-45deg, #ECECEC, #ECECEC 25%, #FFFFFF 25%, #FFFFFF 50%); /* Simplified wave colors */
+    animation: waveAnimation 10s infinite;
+}
+
+.about-wave1 {
+    animation-delay: 0s;
+}
+
+.about-wave2 {
+    animation-delay: 5s;
+    opacity: 0.5;
+}
+
+.about-wave3 {
+    animation-delay: 7.5s;
+    opacity: 0.2;
+}
+
+.about-layout-cards {
+    padding-bottom: 50px; 
+}
+
+.shared-text {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 40px; 
+    position: relative; 
+    z-index: 10; 
+}

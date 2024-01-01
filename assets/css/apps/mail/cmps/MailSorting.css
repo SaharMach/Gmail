@@ -1,0 +1,52 @@
+.sorting-container{
+    grid-area: 2;
+    text-align: center;
+    background-color: #f6f8fc;;
+    position: relative;
+}
+
+.sorting-list {
+    position: sticky;
+    /* top: 80px; */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-items: center; 
+}
+
+.sorting-list li:not(:first-child){
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.3fr;    
+    cursor: pointer;
+    margin: 0 0 0.5em;
+    padding-left: 20px;
+    justify-items: start;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 12px;
+    height: 32px;
+    width: 95%;
+}
+
+.sorting-list li:not(:first-child):hover{
+    background-color: #dadada;
+    min-width: 40px;
+    max-width: 240px;
+    height: 2rem;
+    border-top-right-radius: 555px;
+    border-bottom-right-radius: 555px;
+}
+
+.mail-count {
+    /* margin-left: 8px;  */
+    color: gray; 
+    font-size: 0.7rem;  
+    font-weight: bold;
+}
+
+
+
+

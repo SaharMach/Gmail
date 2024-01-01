@@ -1,0 +1,57 @@
+ /* mail list */
+
+ * {
+     box-sizing: border-box;
+ }
+
+ .mails-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    list-style: none;
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+ }
+
+ .mails-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    padding-right: 8px;
+    padding-top: 10px;
+    border-radius: 8px;
+ }
+
+.mail{
+    display: flex;
+    align-items: center;    
+}
+
+.mail .mail-preview-btns {
+    background-color: #ffffff;
+
+}
+
+.mail.read .mail-preview-btns {
+    background-color: #f2f6fc;
+    color: black;
+}
+
+.mail-list-header{
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.mail-list-header button span{
+    font-size: 16px;
+}
+
+.drop-down-container select{
+    width: 20px;
+}
+

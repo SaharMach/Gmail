@@ -1,0 +1,121 @@
+.compose-modal {
+    position: fixed;
+    display: grid;
+    min-width: 600px;
+    max-height: 600px;
+    bottom: 5px;
+    height: calc(100vh - 80px);
+    right: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 30;  
+}
+
+.compose-modal form {
+    display: grid;
+    grid-template-rows: repeat(3, 50px) 1fr auto;
+    gap: 3px;
+}
+
+.compose-close-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.compose-modal input {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    border-bottom: 1px solid rgba(171, 170, 170, 0.591);
+    width: 92%;
+    font-size: 15px;
+}
+
+.compose-modal textarea {
+    border: none;
+    resize: none;
+}
+
+.compose-header {
+    display: flex;
+    background: #f2f6fc;
+    align-items: center;
+}
+
+.submit-btn {
+    width: 100px;
+    height: 36px;
+    border-radius: 25px;
+    margin-left: 5px;
+    background: none;
+    color: white;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #0B57D0;
+    margin-bottom: 10px;
+}
+
+.compose-header h1 {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: normal;
+    font-weight: 600;
+    margin-left: 22px;
+
+}
+
+.compose {
+    padding: 10px;
+    background-color: #c2e7ff;
+    height: 55px;
+    min-width: 60px;
+    max-width: 150px;
+    border-radius: 16px;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.compose span:first-of-type{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compose:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.compose-txt{
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.main-layout.close .compose  {
+    margin-left: 10px;
+}
+
+.compose{
+    margin-top: 3px;
+    margin-bottom: 10px;
+    /* z-index: 20px; */
+}

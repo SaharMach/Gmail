@@ -1,0 +1,48 @@
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.starred i {
+    color: #f3d529;
+}
+
+.active{
+    height: 32px;
+    background-color: #d3e3fd;
+    min-width: 40px;
+    max-width: 240px;
+    border-top-right-radius: 555px;
+    border-bottom-right-radius: 555px;
+    font-weight: bold;
+}
+
+.clean-btn{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
