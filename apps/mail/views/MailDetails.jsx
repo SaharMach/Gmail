@@ -14,7 +14,7 @@ export function MailDetail() {
     })
 
     function onBack() {
-        navigate('/mail')
+        navigate('/')
     }
     if (!mail) return <div>Loading...</div>
 
